@@ -1,0 +1,157 @@
+body{
+font-family: georgia;
+}
+#pagetitle {
+  text-align: center;
+  font-size: 140%;
+  color:#E62B1E;
+  font-family: "proxima nova",georgia;
+}
+#whalewords{
+  font-size: 150%;  
+  text-align: center;
+}
+
+#description{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#loadingText{
+  color: grey;
+  text-align: center;
+}
+
+#container{
+  display: inline-block;
+  width: 65%;
+}
+
+#containerVideo {
+	display: inline-block;
+	vertical-align: bottom;
+	width: 30%;
+	margin-left: 2%;
+}
+
+#headerText{
+  margin-left: 70px;
+}
+
+#wordForm{
+  display:inline;
+}
+
+#inputspan{
+  float: left;
+}
+
+.timeLabel{
+	font-size: 10pt;
+}
+
+#title, #hoverInstruction{
+  visibility: hidden;
+  float: right;
+  margin-right: 80px;
+}
+
+#wordText{
+  font-variant:small-caps;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+#talkVideo {
+	text-align: center;
+}
+
+#seekVideo {
+	visibility: hidden;
+}
+
+#buttonLocation {
+	text-align: center;
+	margin-top: 15px;
+}
+
+
+#context{
+  overflow:hidden;
+}
+
+#chapterTitle{
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+#footer{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+#footerInfo{
+  text-align: center;
+  display: none;
+}
+
+
+.right{
+  float: right;
+}
+
+.dropDown{
+  text-transform: capitalize;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: #647EAA;
+}
+
+.active {
+	fill: darkorange;	
+}
+
+.bbar{
+	fill:steelblue;
+}
+
+.chapter.light{
+	fill:lightgrey;
+}
+
+.chapter.dark{
+	fill:grey;
+}
+
+.x.axis path {
+  display: none;
+}
+
+#tooltip {
+  position:absolute;
+  z-index: 10;
+  visibility: hidden;
+  background-color: white;
+  font-size: 110%;
+  box-shadow: 2px 2px 3px #000;
+  border: 1px solid grey;
+}
+
+.blacklink{  -webkit-user-select: none; /* Chrome/Safari */        
+
+  font-size: 100%;
+}
+
+.ui-widget {
+  font-family: georgia !important;
+  font-size: 1em !important;
+}

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css">
+<body>
+	<h1 id="pagetitle">WordView</h1>
+	<h1 id = 'whalewords'>
+		
+	</h1>
+	
+	<div id = "description"><strong>Description:</strong> <span id = 'talkDescription'></span>
+	</div>
+	
+	<h2 id = 'loadingText'>
+		<br>
+		<br>
+		<br>
+		Transcript Loading...
+	</h2>
+	
+	<div id = 'container'>
+		<div id = 'headerText'>
+			<div id = 'controls'>
+				<div id = 'inputtitle'>
+					[Enter] a Talk:
+					<input id = "autocompleteTitle"/>
+				</div>
+				<div id = 'inputspan'>
+					[Enter] a Word:
+					<input id="autocomplete"/> 
+				</div>
+				<div id = "title">
+					<span id = "wordNum"></span>
+					Occurrences of 
+					<span id = "wordText">Words</span>
+					in Transcript
+				</div>
+				<div id = "hoverInstruction">
+					<span>(hover on bar for transcript excerpt)</span>
+				</div>
+			</div>
+		</div>
+		<div id = 'graph'></div>
+	
+	</div> <!-- End of #container -->
+
+	<div id = 'containerVideo'>
+		<iframe frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+	</div> <!-- End of #containerVideo -->
+	
+	<div id = 'footer'>
+		<div id = 'bookText'>
+			<div id = 'chapterTitle'></div>
+			<div id = 'context'></div>
+		</div> <!-- End of #bigSection -->
+	</div>
+
+</body>
+
+<link rel="stylesheet" media="all" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/themes/start/jquery-ui.css"></link>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js"></script>
+
+<script src="http://d3js.org/d3.v3.js"></script>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+<script src="js/graph_final.js"></script>

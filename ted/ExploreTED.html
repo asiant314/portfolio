@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html style="height:100%">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/indexstyle.css">
+<script type="text/javascript" src="js/kxn1rzz.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".individ1").hover(function() {
+			$(".individ1_des").css('display', function() {
+				$(".defaultdesc").css('display','none');
+				$(".individ1 .greybox").css("background-color","#E62B1E");
+				$(".individ2_des").css('display', 'none');
+				$(".individ3_des").css('display', 'none');
+				$(".introselective").css('display','block');
+				return 'block';
+			});
+
+		}, function() {
+			$(".individ1 .greybox").css("background-color","gray");
+			/* Stuff to do when the mouse leaves the element */
+		});
+			$(".individ2").hover(function() {
+			$(".individ2_des").css('display', function() {
+				$(".defaultdesc").css('display','none');
+				$(".individ2 .greybox").css("background-color","#E62B1E");
+				$(".individ1_des").css('display', 'none');
+				$(".individ3_des").css('display', 'none');
+				$(".introselective").css('display','block');
+				return 'block';
+			});
+
+		}, function() {
+			$(".individ2 .greybox").css("background-color","gray");
+			/* Stuff to do when the mouse leaves the element */
+		});
+				$(".individ3").hover(function() {
+			$(".individ3_des").css('display', function() {
+				$(".defaultdesc").css('display','none');
+				$(".individ3 .greybox").css("background-color","#E62B1E");
+				$(".individ1_des").css('display', 'none');
+				$(".individ2_des").css('display', 'none');
+				$(".introselective").css('display','block');
+				return 'block';
+			});
+
+		}, function() {
+			
+			$(".individ3 .greybox").css("background-color","gray");
+				
+			
+			/* Stuff to do when the mouse leaves the element */
+		});
+ $(".individ1").click(function() {
+   window.open('viz1.html');
+      });
+ $(".individ2").click(function() {
+   window.open('TEDTalks_final.html');
+      });
+ $(".individ3").click(function() {
+   window.open('doge2.html');
+      });
+ $(".introselective").click(function() {
+ $(".defaultdesc").css('display', function() {
+				$(".individ3_des").css('display','none');
+				$(".greybox").css("background-color","gray");
+				$(".individ1_des").css('display', 'none');
+				$(".individ2_des").css('display', 'none');
+				$(".introselective").css('display','none');
+				return 'block';
+			});
+      });
+	});
+</script>
+</head>
+<body style="height:100%; font-size:100%">
+<div class="head" id="head1">
+	<div class="title">Explore <span class="logo">TED</span></div>
+	<div class="introselective">Back to intro</div>
+</div>
+<div class="content">
+	<div class="items">
+		<div class="individ1">
+			
+			<div class="image1">
+				<img style="max-width:100%"  src="content/img1.png">
+			</div>
+			<div class="greybox"></div>
+			<div class="viztitle">Discover TED</div>
+		</div>
+		<div class="individ2" >
+			<div class="image1">
+				<img style="max-width:100%"  src="content/img2.png">
+			</div>
+			<div class="greybox"></div>
+			<div class="viztitle" style="margin-left:31%">WordView</div>
+			</div>
+		<div class="individ3" >
+			<div class="image1">
+				<img style="max-width:100%" src="content/img3.png">
+			</div>
+			<div class="greybox"></div>
+			<div class="viztitle">Dogeify TED</div>
+		</div>
+	</div>
+	<div class="description" id="des1">
+		<div class="defaultdesc">Welcome to the Explore TED.<br><br> On your left you'll find 3 visualizations that we created to explore the world of TED talks. This was done as a part of our Information visualization class(HCDE 511).<br><br> Following the "Rapid Iterative Testing and Evaluation" method we created a Tabelau visualization that can help you find a talk to watch. We also created an interactive concordance using D3 to explore the <span style="font-style:italic">words</span> of TED . Finally we created a dynamic doge generator( admittedly our favorite out of the three) which creates a doge meme using the top words in a talk.<br><br> Have fun checking them out!
+		</div>
+		<div class="individ1_des"><div class="viztitle2">Discover TED</div><div class="imgwrapper"><div class="image2"><img src="content/img4.png" style="max-width:100%"></div></div>Discover TED is an interactive Tableau dashboard. It uses the power of Tableau to help you find the next mindblowing TED talk. Pick a topic from the bubble chart and get a list of the most popular talks within that topic. You can select both the measures used to size the bubbles and list the talks. The embedded video will provide you with instant access to the talk you select.</div>
+		<div class="individ2_des"><div class="viztitle2">WordView</div><div class="imgwrapper"><div class="image2"><img src="content/img5.png" style="max-width:100%"></div></div>Want to find how many times Richard Dawkins said Atheism in the video you just heard? This visualization uses D3 magic to skim through talk transcripts and give you word frequency by time. The context provider at the bottom lets you see the exact paragraph in which the word was used. We've also embedded the video in case you don't want to take our word for it.</div>
+		<div class="individ3_des"><div class="viztitle2">Dogeify Ted</div><div class="imgwrapper"><div class="image2"><img src="content/img6.png" style="max-width:100%"></div></div><span style="font-family:comic sans ms">such speaker, much talk, very words, wow</span> </div>
+	</div>
+</div>
+<div style="font-family:San Serif;font-size:10pt;color:lightgrey;">Data source : <a href="https://www.idiap.ch/dataset/ted">IDIAP Institute</a><div style="float:right; display:inline;">Created by Tableau Masters:<a href="http://www.linkedin.com/in/anping6" target="_blank">An Ping</a> & <a href="http://www.linkedin.com/pub/joshua-coppola/17/183/202" target="_blank">Josh Coppola</a> <span>, D3 Vizard:</span> <a href="http://www.linkedin.com/pub/thai-le/42/5b1/60b" target="_blank">Thai Le</a> <span> and Shibe Generator:</span> <a href="http://www.linkedin.com/in/prathamp" target="_blank">Pratham Parikh</a> for <a href="http://courses.washington.edu/hcde511/s14/" target="_blank">HCDE 511</a></div></div>
+
+</body>
+</html>

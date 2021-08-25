@@ -1,0 +1,200 @@
+
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+ <script type="text/javascript" src="//use.typekit.net/kxn1rzz.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+<script >
+  function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+function shuffle(array) {
+    var tmp, current, top = array.length;
+
+    if(top) while(--top) {
+    	current = Math.floor(Math.random() * (top + 1));
+    	tmp = array[current];
+    	array[current] = array[top];
+    	array[top] = tmp;
+    }
+
+    return array;
+}
+function converttolowercase(array){
+
+	for(var i=0;i<array.length;i++)
+	{
+		array[i]=array[i].toLowerCase();
+	}
+
+	return array;
+
+}
+function makedoge()
+{
+$("#embeded_vid").fadeOut(50);
+	$("#canvasImg").fadeIn(50);
+	$("#length").empty();
+	$("#talktitle").empty();
+	var titler="";
+	var transcription="";
+	
+		
+		titler= $("#talklist").val();
+		$.getJSON('ted_data_final.json',function(resulted,textStatus) {
+			$("#talktitle").append(titler);
+
+			for( i=0; i<resulted.length; i++)
+			{
+				if(titler==resulted[i].title)					
+				{
+					$("#embeded_void").attr("src",resulted[i].embed_url);
+					text = resulted[i].top_ten_words;
+					if ( text.length==0)
+						text = defaulttext;
+
+					relthemes=resulted[i].related_themes;
+					text = text.concat(relthemes);
+					text = converttolowercase(text);
+
+					 var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var imageObj = new Image();
+ 		//var color = ["blue","red","green","orange","purple"];
+ 
+      imageObj.onload = function() {
+        context.drawImage(imageObj, 0, 0);
+        context.font = 'bold 38pt Comic Sans MS';
+       strings[0]="wow";
+       text = shuffle(text);
+       for (i = 1; i < 6; i++) {
+
+      	strings[i] = shibeisms[Math.floor(Math.random() * 9)] +" "+ text[i-1];
+      	
+      
+        	}
+
+       for(i = 0 ; i< strings.length; i++)
+      {
+      var randomColor = Math.floor((Math.random() * 16,777,216));
+       var randomXvar = Math.floor((Math.random() * 900));
+       var randomYvar = Math.floor((Math.random() * 940) + 20 );
+
+        context.fillStyle = getRandomColor();
+        context.fillText(strings[i],randomXvar,randomYvar);
+      }
+      var dataURL = canvas.toDataURL();
+      document.getElementById('canvasImg').src = dataURL;
+      };
+      imageObj.src = 'shibe.jpg';
+
+					//$("#author").append(text);
+					break;
+				}
+
+			}
+		
+		});
+
+	
+
+}
+var text = [];
+var relthemes=[];
+var defaulttext = ["transcript","does not exist","not found","doge is love","doge is life","first shibe on moon"]
+var autolist = [];
+var shibeisms = ["so","such","many","very","no","much","what","pls","must"];
+   var strings = [];
+var i=0;
+jQuery(document).ready(function($) {
+	$.ajaxSetup({ scriptCharset: "utf-8" , contentType: "application/json; charset=utf-8"});
+	
+	$.getJSON('ted_data_final.json',function(result, textStatus) {
+	
+	$.map(result, function(data, index) {
+			autolist[i++]=""+data.title+"";
+		});
+
+		/*for ( var i=0 ; i <result.length;i++)
+	{
+		
+		text = text + "<option>"+result[i].title+"</option>";
+
+		<img id="canvasImg" style="display:none;position:absolute;" title="Click to refresh">
+
+
+	}
+
+	*/
+
+	//$("div").append("<select>"+text+"</select>");
+	$("#talklist").autocomplete({
+
+		source: autolist
+
+	});
+	});
+	$('#talklist').bind("enterKey",function(e){
+   makedoge();
+   $('#talklist').blur();
+	$("#canvasImg").show();
+	setTimeout("$('#bringbackbutton').css('display','block');",400);//do stuff here
+});
+$('#talklist').keyup(function(e){
+    if(e.keyCode == 13)
+    {
+        $(this).trigger("enterKey");
+    }
+});
+$("#canvasImg").click(function(event){
+	makedoge();
+});
+$("#bringbackbutton").click(function(event) {
+	
+	if($(this).text()=="Video,pls")	
+		$("#canvasImg").fadeOut('slow', function(event){
+			$("#bringbackbutton").text('Doge,pls');
+		//	$("#embeded_vid").css("display","inline");
+			});	
+	else 
+		
+		$("#canvasImg").fadeIn('Slow', function(event){
+			$("#bringbackbutton").text('Video,pls');
+			//	$("#canvasImg").css("display","inline");
+	});
+
+
+	
+
+});
+	
+});
+
+</script>
+<div class="heading" style="margin:auto;width:auto;margin-bottom:0px;margin-top:-20px;">
+<h1 style="color:gray; font-family: proxima-nova,sans-serif; font-size: 3vw; font-style: normal; font-weight: 100;text-align:center;margin-bottom:-5px;"><span style="font-family:Comic Sans MS; color:#E62B1E;">dogeify</span> TED</h1>
+</div>
+<div class="textinputdiv" style="margin:auto;max-width:30%;margin-top:1%;">
+<input id="talklist"  style="height:30px;width:100%;font-family: proxima-nova,sans-serif; font-size: 0.9vw; font-style: normal; font-weight: 100;text-align:center;border:1px solid lightgray;"placeholder="Which talk do you want to dogeify?" >
+</div>
+<canvas id="myCanvas" width="1280" height="960" style="display:none"></canvas>
+<div style="margin:auto;width:640px;position: relative;overflow: hidden;margin-top:1%;margin-bottom:1%">
+<img id="canvasImg" style="display:none;position:absolute;top: 0;left: 0;max-width: 100%;" title="Click to refresh">
+<iframe id="embeded_void" src="" style="z-index:-1;top: 0;left: 0;max-width: 100%;"width="640" height="480" frameborder="0" scrolling="yes" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</div>
+<div style="margin:auto;width:50%;margin-top:0px;">
+<label id="bringbackbutton" style="display:none;background-color:#E62B1E;color:white;width:px;font-family:'Comic Sans MS';font-size:20px;text-align:center;">Video,pls</label>
+</div>
+
+</body>
+</html>
