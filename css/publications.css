@@ -1,0 +1,223 @@
+/*Color Brewer Sequential 5 Purple Scale:
+#79A1F2
+#9BC1F2
+*/
+
+/*Styles for responsive design, mobile first then expanding out as needed*/
+
+/*****************************************************************************************************************/
+/*Global Styles*/
+/*****************************************************************************************************************/
+
+/*Sets font-family body wise*/
+body {
+	font-family: 'Open Sans', sans-serif;
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.bodyContent {
+	margin-bottom: 50px;
+}
+
+.publicationSection {
+	margin-bottom: 50px;
+}
+/*****************************************************************************************************************/
+/*Top Navigation Header Styles*/
+/*****************************************************************************************************************/
+
+
+/*Navigation header font size*/
+#header {
+	font-family: "Helvetica Neue", Georgia, "Times New Roman", Times, serif;
+	font-size: 14pt;
+}
+
+/*Brand icon is at max height of navbar*/
+.navbar-brand {
+	padding: 2px 10px;
+}
+
+.navbar-brand img {
+	margin-top: 3px;
+	height: 70px;
+
+}
+
+.navText {
+	border-bottom: 2px solid #5D75A6;
+}
+
+
+
+/*Sets the nav header background color, header color schemes*/
+.navbar, .navbar-header {
+	min-height:80px !important;
+	background-color: #ffffff;
+	margin-bottom: 0px;
+	font-size: 18px;
+	border: none;
+
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	background: none;
+	color: #5c8ef2;
+	text-decoration: underline;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: #5c8ef2;
+	text-decoration: underline;
+
+}
+.navbar-default .navbar-nav>li>a {
+	color: #737373;
+	font-weight: 500;
+}
+
+/*Centers the collapsed navbar button*/
+button.navbar-toggle {
+	margin-top: 20px;
+}
+
+
+/*Centers content on the nav bar*/
+@media (min-width: 768px){
+    .navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+
+	.navbar, .navbar-header {
+		min-height:90px !important;
+	}
+
+
+	#header {
+		font-size: 11pt;
+	}    
+
+	#navbar-collapse-links {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		padding-left: 8px;
+		padding-right: 8px;		
+	}	
+
+	.navbar-brand {
+		padding-top: 3px;
+	}
+
+	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+		margin-left: 5px;
+	}
+	/*Sets line height of nav text to center for larger media*/
+	.navbar-nav>li>a {
+		line-height: 65px;
+		padding-top: 9px;
+	}
+
+}
+
+
+
+@media (min-width: 1200px){
+
+	/*Sets the nav header background color, header color schemes*/
+	.navbar, .navbar-header {
+		font-size: 22px;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+}
+
+/*****************************************************************************************************************/
+/*Page Title Style*/
+/*****************************************************************************************************************/
+#pageHeader {
+	margin-top: 5vh;
+	margin-bottom: 3vh;
+}
+
+
+/*****************************************************************************************************************/
+/*Publication List Styles*/
+/*****************************************************************************************************************/
+
+.publicationHeader {
+	font-size: 24px;
+	font-weight: 400;
+	/*line-height: 1.5;*/
+	/*color: #54278f;*/
+}
+
+.subHeader {
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: 1;
+	color: #8E918F;
+}
+
+.publicationYear {
+	margin-bottom: 20px;
+}
+
+.publications > p {
+	margin-bottom: 15px;
+}
+
+@media (min-width: 992px){
+	.publications > p {
+		margin-bottom: 3vh;
+		font-size: 16px;
+	}
+}
+/*****************************************************************************************************************/
+/*Footer Navigation Styles*/
+/*****************************************************************************************************************/
+
+
+/* Footer Styles */
+footer{
+/*	position: absolute;
+	bottom: 0px;
+*/	width: 100%;
+	color: white;
+}
+
+footer>div{
+  background: #223459;
+  padding-top: 1%;
+  padding-bottom: .5%;
+}
+
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #FFFFFF;
+}
+
+footer .active {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+/* Centers footer content */
+footer {
+	text-align: center;
+}
+

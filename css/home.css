@@ -1,0 +1,330 @@
+/*Color Brewer Sequential 5 Purple Scale:
+#79A1F2
+#9BC1F2
+*/
+
+/*Styles for responsive design, mobile first then expanding out as needed*/
+
+/*****************************************************************************************************************/
+/*Global Styles*/
+/*****************************************************************************************************************/
+
+/*To make footer sticky on bottom*/
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+
+/*Sets font-family body wise*/
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	/*padding-bottom: 50px;*/
+}
+
+.bodyContent {
+	margin-bottom: 50px;
+}
+
+
+/*****************************************************************************************************************/
+/*Top Navigation Header Styles*/
+/*****************************************************************************************************************/
+
+
+
+/*Navigation header font size*/
+#header {
+	font-family: "Helvetica Neue", Georgia, "Times New Roman", Times, serif;
+	font-size: 14pt;
+}
+
+/*Brand icon is at max height of navbar*/
+.navbar-brand {
+	padding: 2px 10px;
+}
+
+.navbar-brand img {
+	margin-top: 3px;
+	height: 70px;
+
+}
+
+.navText {
+	border-bottom: 2px solid #5D75A6;
+}
+
+
+
+/*Sets the nav header background color, header color schemes*/
+.navbar, .navbar-header {
+	min-height:80px !important;
+	background-color: #ffffff;
+	margin-bottom: 0px;
+	font-size: 18px;
+	border: none;
+
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	background: none;
+	color: #5c8ef2;
+	text-decoration: underline;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: #5c8ef2;
+	text-decoration: underline;
+
+}
+.navbar-default .navbar-nav>li>a {
+	color: #737373;
+	font-weight: 500;
+}
+
+/*Centers the collapsed navbar button*/
+button.navbar-toggle {
+	margin-top: 20px;
+}
+
+
+/*Centers content on the nav bar*/
+@media (min-width: 768px){
+    .navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+
+	.navbar, .navbar-header {
+		min-height:90px !important;
+	}
+
+
+	#header {
+		font-size: 11pt;
+	}    
+
+	#navbar-collapse-links {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		padding-left: 8px;
+		padding-right: 8px;		
+	}	
+
+	.navbar-brand {
+		padding-top: 3px;
+	}
+
+	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+		margin-left: 5px;
+	}
+	/*Sets line height of nav text to center for larger media*/
+	.navbar-nav>li>a {
+		line-height: 65px;
+		padding-top: 9px;
+	}
+
+}
+
+
+
+@media (min-width: 1200px){
+
+	/*Sets the nav header background color, header color schemes*/
+	.navbar, .navbar-header {
+		font-size: 22px;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+}
+
+/*****************************************************************************************************************/
+/*Carousel Styles*/
+/*****************************************************************************************************************/
+
+
+#carouselContainer {
+	margin-top: 40px;
+}
+
+#carouselPartners {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	height: 225px;
+	width: 100%;
+}
+
+.carousel-caption {
+	width: 100%;
+	left: 0%;
+	right: 0%;
+	padding-left: 2%;
+	padding-right: 2%;
+	/*text-align: left;*/
+	bottom: 0px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	background: rgba(0, 0, 0, 0.75);
+}
+
+
+.captionHeader {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-size: 18px;
+}
+
+/*Centers content on the nav bar*/
+@media (min-width:475px) {
+	.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+		height: 275px;
+	}
+
+
+}
+@media (min-width: 768px){
+
+	#carouselPartners {
+		width: 80%;
+	}
+
+	.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+		height: 325px;
+	}
+
+	.captionHeader {	
+		font-size: 24px;
+	}	
+}
+
+
+@media (min-width: 992px){
+
+	#carouselPartners {
+		width: 70%;
+	}
+
+	.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+		height: 350px;
+	}
+}
+
+
+@media (min-width: 1200px){
+
+	.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+		height: 400px;
+	}
+
+}
+
+/*****************************************************************************************************************/
+/*Headline and contact*/
+/*****************************************************************************************************************/
+
+.headline {
+	font-size: 26px;
+	width: 90%;
+	margin-top: 30px;
+}
+
+/* Italicizes and colors keywords */
+.emphasize {
+	font-style: italic;
+	font-weight: bold;
+
+}
+
+.contactIcon {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 20px;
+	
+}
+
+.fa-stack > a {
+	color: #1E6191;
+}
+
+
+.fa-stack > a:hover {
+	color: #5c8ef2;
+}
+
+.descriptionHeader {
+	margin-bottom: 100px;
+}
+
+@media (min-width: 768px){
+	.headline {
+		font-size: 30px;
+		margin-top: 40px;
+	}
+
+	.contactIcon {
+		font-size: 35px;		
+		margin-top: 20px;
+		
+	}
+
+
+}
+
+
+/*****************************************************************************************************************/
+/*Footer Navigation Styles*/
+/*****************************************************************************************************************/
+
+
+/* Footer Styles */
+footer{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	color: white;
+	height: 50px;
+}
+
+footer>div{
+  background: #223459;
+  padding-top: 1%;
+  padding-bottom: .5%;
+}
+
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #FFFFFF;
+}
+
+footer .active {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+/* Centers footer content */
+footer {
+	text-align: center;
+}
+

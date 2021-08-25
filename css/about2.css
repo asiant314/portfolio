@@ -1,0 +1,449 @@
+/*Color Brewer Sequential 5 Purple Scale:
+#79A1F2
+#9BC1F2
+*/
+
+/*Styles for responsive design, mobile first then expanding out as needed*/
+
+/*****************************************************************************************************************/
+/*Global Styles*/
+/*****************************************************************************************************************/
+/*To make footer sticky on bottom*/
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+
+/*Sets font-family body wise*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  /*padding-bottom: 50px;*/
+}
+
+.bodyContent {
+  margin-bottom: 50px;
+}
+
+/*****************************************************************************************************************/
+/*Top Navigation Header Styles*/
+/*****************************************************************************************************************/
+
+
+/*Navigation header font size*/
+#header {
+  font-family: 'Merriweather', serif;
+  font-size: 14pt;
+}
+
+/*Brand icon is at max height of navbar*/
+.navbar-brand {
+  padding: 2px 10px;
+}
+
+.navbar-brand img {
+  margin-top: 3px;
+  height: 70px;
+
+}
+
+.navText {
+  border-bottom: 2px solid #5D75A6;
+}
+
+
+
+/*Sets the nav header background color, header color schemes*/
+.navbar, .navbar-header {
+  min-height:80px !important;
+  background-color: #ffffff;
+  margin-bottom: 0px;
+  font-size: 18px;
+  border: none;
+
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  background: none;
+  color: #5c8ef2;
+  text-decoration: underline;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: #5c8ef2;
+  text-decoration: underline;
+
+}
+.navbar-default .navbar-nav>li>a {
+  color: #737373;
+  font-weight: 500;
+}
+
+/*Centers the collapsed navbar button*/
+button.navbar-toggle {
+  margin-top: 20px;
+}
+
+
+/*Centers content on the nav bar*/
+@media (min-width: 768px){
+    .navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+
+  .navbar, .navbar-header {
+    min-height:90px !important;
+  }
+
+
+  #header {
+    font-size: 11pt;
+  }    
+
+  #navbar-collapse-links {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    padding-left: 8px;
+    padding-right: 8px;   
+  } 
+
+  .navbar-brand {
+    padding-top: 3px;
+  }
+
+  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 5px;
+  }
+  /*Sets line height of nav text to center for larger media*/
+  .navbar-nav>li>a {
+    line-height: 65px;
+    padding-top: 9px;
+  }
+
+}
+
+
+
+@media (min-width: 1200px){
+
+  /*Sets the nav header background color, header color schemes*/
+  .navbar, .navbar-header {
+    font-size: 22px;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+/*****************************************************************************************************************/
+/*Page Title Style*/
+/*****************************************************************************************************************/
+#pageHeader {
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+
+
+/*****************************************************************************************************************/
+/*Section content*/
+/*****************************************************************************************************************/
+
+/*Sets the background image, 10, 12*/
+.sectionContent {
+  padding-top: 5vh;
+  height: 60vh;
+}
+
+/*Name Tag Styling*/
+
+.helloTag {
+  background-color: #1E6191;
+  border-radius: 35px 35px 0px 0px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  padding-right: 10px;  
+  color: white;
+  line-height: 55%;
+}
+
+#hello {
+  font-size: 30px;
+  margin-top: 15px;
+  letter-spacing: 10px;
+}
+
+#myName {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.aboutTag {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: solid 3px #1E6191;
+  font-family: 'Indie Flower', cursive;
+}
+
+#name {
+  font-size: 40px;
+  
+}
+
+#about {
+  font-size: 20px;
+}
+
+.closeTag {
+  background-color: #1E6191;
+  border-radius: 0px 0px 35px 35px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;    
+}
+
+.imageContent {
+  /*width: 100%;*/
+  height: 25vh;
+  background-image: url("/content/skylineVertical.jpg");
+  background-size: 100% 100%;
+  
+  /*height: 10%;*/
+}
+
+
+/*Background color for download buttons*/
+.download {
+  background-color: #1E6191;
+  width: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+a.btn.download {
+  color: white;
+}
+
+a.btn.download:hover {
+  background-color: #5c8ef2;
+}
+.downloadSection {
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 500px)  {
+  .imageContent {
+    height: 30vh;
+  }
+
+  .helloTag {
+    line-height: 130%;
+  }
+  #hello {
+    font-size: 50px;
+  }
+
+  #myName {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+
+  #name {
+    margin-bottom: 0px;
+    font-size: 60px;
+    
+  }
+
+  #about {
+    font-size: 30px;
+  }
+
+  .btn {
+    font-size: 20px;
+    width: 130px;
+  } 
+
+}
+
+
+/*Media query for landscape*/
+@media screen and (orientation: landscape)  {
+
+  .sectionContent {
+    min-height: 250px;
+  }
+
+  /*Name Tag Styling*/
+  .helloTag {
+    width: 60%;
+  }
+
+  #hello {
+    font-size: 30px;
+  }
+
+  #myName {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+
+  .aboutTag {
+    width: 60%;
+  }
+
+  #name {
+    margin-bottom: 0px;
+    font-size: 35px;
+    
+  }
+
+  #about {
+    font-size: 15px;
+  }
+
+  .closeTag {
+    width: 60%;
+  }
+
+  .imageContent {
+    /*width: 100%;*/
+    background-image: url("/content/skylineHorizontal.jpg");
+  }
+
+  .btn {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 750px) and (orientation: landscape)  {
+
+  .helloTag {
+    line-height: 130%;
+  }
+  #hello {
+    font-size: 40px;
+  }
+
+  #myName {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+
+
+  #name {
+    margin-bottom: 0px;
+    font-size: 40px;
+    
+  }
+
+  #about {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 15px;
+  } 
+
+}
+
+@media screen and (min-width: 1000px) and (orientation: landscape)  {
+
+  .helloTag {
+    line-height: 140%;
+    padding-bottom: 3px;
+  }
+
+  #hello {
+    font-size: 50px;
+  }
+
+  #myName {
+    font-size: 20px;
+  }
+
+  #name {
+    padding-top: 10px;
+    font-size: 60px;
+  }
+  
+  #about {
+    font-size: 30px;
+  }
+  .aboutTag {
+    border: solid 5px #1E6191;
+    height: 30vh;
+  }
+
+  .btn {
+    font-size: 20px;
+    width: 130px;
+  } 
+
+}
+/*****************************************************************************************************************/
+/*Footer Navigation Styles*/
+/*****************************************************************************************************************/
+
+
+/* Footer Styles */
+footer{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  color: white;
+  height: 40px;
+}
+
+footer>div{
+  background: #223459;
+  padding-top: 1%;
+  padding-bottom: .5%;
+  height:100%;
+}
+
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #FFFFFF;
+}
+
+footer .active {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+/* Centers footer content */
+footer {
+  text-align: center;
+}
+
