@@ -1,0 +1,49 @@
+[
+	{
+		"question": "You are new to a project and there's no persona or customer segmentation information available. How would you go about developing personas that are representative and practical as design tools?",
+		"answer": "Applies a mixed methods approach, involves both ethnographic work in addition to surveys, market segment data, usage logs, Understands difference between market segments and personas. Discusses approaches for dissemination, usage of persona",
+		"tag": ["tag1", "tag2"]
+	},
+	{
+		"question": "Your eng team is paralyzed as they have so many features they want to build for the next quarter, but only enough resources to do a couple. Design a study to help them prioritize what they should work on, to drive the most conversion.",
+		"answer": "Talks through different feature prioritization approaches (Kano, conjoint, max diff, ratings). Includes initial formative/foundation research to identify user needs.",
+		"tag": ["tag3", "tag4"]
+	},
+	{
+		"question": "You are evaluating 3 different UI text options for an app download screen. You can test these options via a series of moderated usability session or via an online survey tool. How do you determine which approach you pick? For the survey based approach, how many people do you end up surveying? Would you show them each of the 3 variants? Only one?",
+		"answer": "Tradeoffs in study design, usability to iteratively improve, identify issues in variants at the cost of time and resources. Surveys to scale for larger audiences, quantitative comparisons across the designs. Survey sampling and study design (within vs between subject tradeoffs).",
+		"tag": ["tag3", "tag4"]
+	},
+	{
+		"question": "In usability studies, how would you describe your moderation style? What is your best technique to capture behaviors and reactions most representative of how users will do in the real world setting? Participants don't talk? Participants that talk non-stop? Participants who think they know what you want to hear?",
+		"answer": "Focus on behavior, less so on subjective statements. Moderation best practices for moving studies along at a good pace while gathering high quality data. Making sure participants are comfortable, building up rapport.",
+		"tag": ["tag3", "tag4"]
+	},
+	{
+		"question": "After launching new designs for <your favorite website/app/product that is not a Google product > your long-time users had a strong negative reaction to the initial designs. Design a research plan to study and understand the reaction. You are particularly concerned with separating out change aversion from core problems.",
+		"answer": "Focuses on tracking sentiment and change aversion. Recognizes that there is some time before stabilization. Baseline before and after comparisons with satisfaction tracking. Looks at only new users to control for change bias",
+		"tag": ["tag3", "tag4"]
+	},
+
+	{
+		"question": "Suppose you are joining a relatively young team yet to have the luxury of having a dedicated user researcher. What are some strategies you would employ to help the team better leverage your core competencies?",
+		"answer": "Focus on building rapport with team, defining processes, building relationships. Encouraging participation in design activities, research. UXR 101 type of seminar. Regular brown bags to demonstrate impact of research",
+		"tag": ["tag3", "tag4"]
+	},
+	{
+		"question": "Talk through your typical process and timeline for conducting a more tactical usability study? How would this change if you were given half the time to complete the research?",
+		"answer": "Explores lightweight usability approaches (cafe studies, remote usability, unmoderated usability, internal studies, advisory boards). Recognizes potential tradeoffs with these approaches",
+		"tag": ["tag3", "tag4"]
+	},
+	{
+		"question": "How would you evaluate a concept for a new product or service that has not yet been seen in the market, in other words there is no direct peer or competitor to compare it.",
+		"answer": "Ethnographic research to understand user needs, inform concepts. Competitive review to understand what is currently out there, though caveat being you don’t want to become too fixated on existing designs such that it impedes innovation (ex/ in focus groups, I’ve seen occasions where users often reference other products and features that they found exciting). Concept study to explore early ideas. Trade-off between concept studies and survey based approaches such as Kano/MaxDiff. Concept studies are great at diving deep, though it’s time consuming (creating concepts) and you are often limited in how many you can share. You can use a storyboard to describe the concept holistically within a flow. Surveys allow for greater scale (number of concepts, number of participants and subsegments of users), since these responses are quantified, you can get more nuanced comparisons and rankings of concepts",
+		"tag": ["tag3", "tag4"]
+	},
+	{
+		"question": "What have you found to be the most effective ways to communicate your research findings and recommendations? Provide examples.",
+		"answer": "Range of approaches depending on audience. Domains international research across 5 countries. Crafted two different presentations depending on audience. First one was to the entire xfnal team (eng, business, leadership, ux). This was a broad audience, and my goal here was to increase awareness and empathy about he international adoption of our product. Decided to do first send out a broader quiz to the team, with questions based on our research findings. Then during the presentation, I showed the results of the survey responses along with the correct answer. This was a great way to demonstrate how the team’s initial conceptions may or may not have aligned with our actual research findings. Added a bonus android figurine for the the top quiz scorers as a bit of motivation also. Second approach was a smaller group of 5-6 stakeholders (PMs, business leads, eng leads). Goal here was different, instead intent was to drive action based on the findings. I reiterated some of the high-level points from the research but I left this presentation more open-ended allowing for discussion and brainstorm of ideas.",
+		"tag": ["tag3", "tag4"]
+	}
+
+]
